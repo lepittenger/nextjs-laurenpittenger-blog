@@ -25,7 +25,7 @@ const Blog = ({ allPosts: { edges } }) => (
                   <img src={node.featuredImage.node.sourceUrl} />
               </div>
               <div className={blogStyles.listitem__content}>
-                <h2>{node.title}</h2>
+                <h2 className={blogStyles.postname}>{node.title}</h2>
                 <Link href={`/blog/${node.slug}`}>
                   <a>Read more</a>
                 </Link>

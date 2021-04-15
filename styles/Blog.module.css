@@ -1,31 +1,40 @@
 .listitem {
-  padding: 0.5em 0 1em;
-  margin: 1em auto 0.5em;
-  display: flex;
-  max-width: 60%;
+
+  @apply pt-2 px-0 pb-4 mt-4 mx-auto mb-2 flex max-w-sm;
+
   border-bottom: 1px solid hsl(0, 0%, 89%);
 }
   
   .listitem__thumbnail img {
+
+    @apply mr-4;
+
     max-width: 10em;
-    margin-right: 1rem;
   }
   
   .listitem__content h2 {
-    margin-top: 0;
+
+    @apply mt-0
+
   }
   
   .article {
-    max-width: 75%;
-    margin: 1em auto;
+
+    @apply max-w-2xl mx-3 my-auto
+
+  }
+
+  .postname {
+    
+    @apply text-lg mb-2;
   }
   
   .postmeta {
-    text-align: center;
-    font-size: 1.5rem;
+
+    @apply text-center text-xl
+
   }
   
   .article img {
-    max-width: 60%;
     height: auto;
   }
