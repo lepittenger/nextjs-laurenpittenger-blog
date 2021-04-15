@@ -8,6 +8,7 @@
   
   .listitem__thumbnail img {
     max-width: 10em;
+    margin-right: 1rem;
   }
   
   .listitem__content h2 {

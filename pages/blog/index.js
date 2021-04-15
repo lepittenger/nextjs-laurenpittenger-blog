@@ -26,7 +26,6 @@ const Blog = ({ allPosts: { edges } }) => (
               </div>
               <div className={blogStyles.listitem__content}>
                 <h2>{node.title}</h2>
-                <p>{node.date}</p>
                 <Link href={`/blog/${node.slug}`}>
                   <a>Read more</a>
                 </Link>
