@@ -22,10 +22,16 @@ const Blog = ({ allPosts: { edges } }) => (
           {edges.map(({ node }) => (
             <div className={blogStyles.listitem} key={node.id}>
               <div className={blogStyles.listitem__thumbnail}>
-                  <img src={node.featuredImage.node.sourceUrl} />
+                <Link href={`/blog/${node.slug}`}>
+                  <a><img src={node.featuredImage.node.sourceUrl} /></a>
+                </Link>
               </div>
               <div className={blogStyles.listitem__content}>
-                <h2 className={blogStyles.postname}>{node.title}</h2>
+                <h2 className={blogStyles.postname}>
+                  <Link href={`/blog/${node.slug}`}>
+                    <a>{node.title}</a>
+                  </Link>
+                </h2>
                 <Link href={`/blog/${node.slug}`}>
                   <a>Read more</a>
                 </Link>
